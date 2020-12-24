@@ -21,7 +21,7 @@ def readAgent(tempbook ,begin):
     speakAgent.setProperty('rate', 150)
     speakAgent.getProperty('volume')
     speakAgent.setProperty('volume', 0.8)
-    book = open(tempbook, 'rb')
+    book = open(tempbook,'rb')
     pdfreader = PyPDF2.PdfFileReader(book)
     totalPages = pdfreader.numPages
     if(totalPages==1):
