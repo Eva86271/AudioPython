@@ -24,7 +24,7 @@ def readAgent(tempbook ,begin):
     book = open(tempbook,'rb')
     pdfreader = PyPDF2.PdfFileReader(book)
     totalPages = pdfreader.numPages
-    if(totalPages==1):
+    if( totalPages==1):
         pdfPage = pdfreader.getPage(0)
         text += pdfPage.extractText().split()
         print(text)
