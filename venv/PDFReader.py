@@ -15,7 +15,7 @@ from tkinter import messagebox
 
 def readAgent(tempbook ,begin):
     # Reading process to begin
-    num=int(begin)
+    num= int(begin)
     speakAgent = pyttsx3.init()
     speakAgent.getProperty('rate')
     speakAgent.setProperty('rate', 150)
